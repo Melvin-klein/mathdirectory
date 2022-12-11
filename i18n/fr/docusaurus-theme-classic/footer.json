@@ -1,0 +1,42 @@
+{
+  "link.title.Learn": {
+    "message": "Apprendre",
+    "description": "The title of the footer links column with title=Learn in the footer"
+  },
+  "link.title.Community": {
+    "message": "Communauté",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "Plus",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Algebra": {
+    "message": "Algèbre",
+    "description": "The label of footer link with label=Algebra linking to /docs/category/algebra"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Melvin-klein/vector.space"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/docusaurus"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Contributors": {
+    "message": "Contributeurs",
+    "description": "The label of footer link with label=Contributors linking to /docs/intro"
+  },
+  "copyright": {
+    "message": "Licence MIT 2022 Math Directory. Construit avec Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
