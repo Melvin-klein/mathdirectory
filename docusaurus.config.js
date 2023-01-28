@@ -75,16 +75,34 @@ const config = {
             position: 'left'
           },
           {
-            to: '/contributing',
+            type: 'dropdown',
             label: 'Contributing',
-            position: 'left'
+            position: 'left',
+            items: [
+              {
+                to: '/contributing',
+                label: 'About',
+              },
+              {
+                to: '/write-a-course',
+                label: 'Write a course',
+              },
+              {
+                to: '/help-us-translate',
+                label: 'Help us translate',
+              },
+              {
+                to: '/code-of-conduct',
+                label: 'Code of conduct',
+              },
+            ],
           },
           {
             type: 'localeDropdown',
             position: 'right',
             dropdownItemsAfter: [
               {
-                to: 'https://my-site.com/help-us-translate',
+                to: '/help-us-translate',
                 label: 'Help us translate',
               },
             ],
@@ -139,7 +157,7 @@ const config = {
             ],
           },
         ],
-        copyright: `${new Date().getFullYear()} Math Directory. Built with Docusaurus.`,
+        copyright: `Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
