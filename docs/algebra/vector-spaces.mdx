@@ -1,0 +1,37 @@
+---
+sidebar_position: 3
+---
+
+import Admonition from '@theme/Admonition';
+
+# Vector spaces
+
+A vector space is a mathematical structure that offers very interesting properties. The main element of a vector space is called a vector. We say that it is a structure because you can use operations between this vectors
+
+:::tip Definition : Vector space
+
+Let $E$ be a non empty set, with two operations : an internal operation (or law) called addition and noted $+$:
+
+$$
+\begin{array}{ccc}
+  E \times E & \longrightarrow & E \\
+  (u, v) & \longrightarrow & u + v
+\end{array}
+$$
+
+and an external operation (or law) called *multiplication* and noted $\cdot$ :
+
+$$
+\begin{array}{ccc}
+  \mathbb{K} \times E & \longrightarrow & E \\
+  (\lambda, u) & \longrightarrow & \lambda \cdot u
+\end{array}
+$$
+
+We say that $(E, +, \cdot)$ is a vector space on $\mathbb{K}$ or a $\mathbb{K}$-vector space if the following properties are satisfied :
+
+- The addition on $E$ is :
+  1. commutative : $u + v = v + u$ for all $(u, v) \in \mathbb{K}^2$
+  2. associative : $(u + v) + w = u + (v + w)$ for all $(u, v, w) \in \mathbb{K}^3$
+
+:::
