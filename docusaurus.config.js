@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Melvin-klein', // Usually your GitHub org/user name.
-  projectName: 'vector.space', // Usually your repo name.
+  projectName: 'mathdirectory', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -40,16 +40,20 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Melvin-klein/vector.space/tree/main',
+            'https://github.com/Melvin-klein/mathdirectory/tree/main',
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          admonitions: {
+            tag: ':::',
+            keywords: ['note', 'tip', 'info', 'caution', 'danger', 'proposition', 'definition', 'remark', 'theorem', 'corollary'],
+          },
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Melvin-klein/vector.space/tree/main',
+            'https://github.com/Melvin-klein/mathdirectory/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -123,7 +127,7 @@ const config = {
             ],
           },
           {
-            href: 'https://github.com/Melvin-klein/vector.space',
+            href: 'https://github.com/Melvin-klein/mathdirectory',
             label: 'GitHub',
             position: 'right',
           },
@@ -150,7 +154,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/Melvin-klein/vector.space',
+                href: 'https://github.com/Melvin-klein/mathdircetory',
               },
               {
                 label: 'Twitter',

@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-import Admonition from '@theme/Admonition';
-
 # Vector spaces
+
+## Introduction and definitions
 
 A vector space is a mathematical structure that offers very interesting properties. The main element of a vector space is called a vector. We say that it is a structure because you can use operations between this vectors
 
-:::tip Definition : Vector space
+:::definition Vector space
 
 Let $E$ be a non empty set, with two operations : an internal operation (or law) called addition and noted $+$:
 
@@ -31,7 +31,26 @@ $$
 We say that $(E, +, \cdot)$ is a vector space on $\mathbb{K}$ or a $\mathbb{K}$-vector space if the following properties are satisfied :
 
 - The addition on $E$ is :
-  1. commutative : $u + v = v + u$ for all $(u, v) \in \mathbb{K}^2$
-  2. associative : $(u + v) + w = u + (v + w)$ for all $(u, v, w) \in \mathbb{K}^3$
+    1. commutative : $u + v = v + u$ for all $(u, v) \in \mathbb{K}^2$
+    2. associative : $(u + v) + w = u + (v + w)$ for all $(u, v, w) \in \mathbb{K}^3$
+    3. own a "zero" called null vector : there exists $\vec{0}$ such that $\vec{u} + \vec{0} = \vec{u}$, for all $\vec{u} \in E$
+    4. Every element has an opposite : for all $u \in E$, there is an element denoted $-u$ such that $u + (-u) = 0$
+- External multiplication verifies :
+    1. $1 \cdot u = u$ pour tout $u \in E$
+    2. $\lambda \cdot (\mu \cdot u) = (\lambda\mu) \cdot u$ for all $(\lambda, \mu) \in \mathbb{K}^2, u \in E$
+- Multiplication is distributive over addition :
+    1. $\lambda \cdot (u + v) = \lambda \cdot u + \lambda \cdot v$ for all $\lambda \in \mathbb{K}$, for all $(u, v) \in E^2$
+    2. $(\lambda + \mu) \cdot u = \lambda \cdot u + \mu \cdot u$ for all $(\lambda, \mu) \in \mathbb{K}^2$, for all $u \in E$
+:::
+
+:::proposition Vector space axioms
+
+If $(E, +, \cdot)$ is a $\mathbb{K}$-vector space, then :
+1. Its null vector is unique
+2. Every vector of $E$ has a unique opposite
+3. $\lambda \cdot 0 = 0$ for all $\lambda \in \mathbb{K}$
+4. $0 \cdot u = 0$ for all $u \in E$
+5. If $\lambda \cdot u = 0$ then $\lambda = 0$ or $u = 0$
+6. $-u = (-1) \cdot u$ for all $u \in E$
 
 :::
