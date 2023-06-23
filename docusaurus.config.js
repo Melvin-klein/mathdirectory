@@ -7,6 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
+const proof = require('./src/remark/proof');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Math Directory',
@@ -41,7 +43,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/Melvin-klein/mathdirectory/tree/main',
-          remarkPlugins: [math],
+          remarkPlugins: [math, proof],
           rehypePlugins: [katex],
           admonitions: {
             tag: ':::',

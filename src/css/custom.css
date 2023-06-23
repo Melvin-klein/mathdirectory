@@ -44,3 +44,12 @@
   margin-top: 3rem; /* 48px */
   margin-bottom: 3rem; /* 48px */
 }
+
+.proof-details {
+  background-color: white;
+  color: #1e293b;
+}
+
+.proof-content p {
+  margin:0;
+}
