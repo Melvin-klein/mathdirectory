@@ -46,8 +46,10 @@
 }
 
 .proof-details {
-  background-color: white;
-  color: #1e293b;
+  background-color: rgb(253, 253, 254);
+  color: rgb(71, 71, 72);
+  --docusaurus-details-decoration-color: #1e293b!important;
+  border: 1px solid rgb(212, 213, 216)!important
 }
 
 .proof-content p {
