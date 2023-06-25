@@ -53,5 +53,24 @@
 }
 
 .proof-content p {
-  margin:0;
+  margin: 0;
+}
+
+.field-item a {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1.5px 3px 0px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border,box-shadow;
+}
+
+.field-item a:hover {
+  text-decoration: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 3px 6px 0 #0003;
+}
+
+.field-item h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: rgb(68, 73, 80);
 }
