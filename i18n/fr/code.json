@@ -285,5 +285,8 @@
   },
   "home.items.third.title": {
     "message": "Communautaire"
+  },
+  "fields.algebra": {
+    "message": "Algèbre"
   }
 }
