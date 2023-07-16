@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Introduction and definitions
 
-A vector space is a mathematical structure that offers very interesting properties. The main element of a vector space is called a vector. We say that it is a structure because you can use operations between this vectors
+In mathematics and physics, a vector space (also called a linear space) is a set whose elements, often called vectors, may be added together and multiplied ("scaled") by numbers called scalars. Scalars are often real numbers, but can be complex numbers or, more generally, elements of any field. The operations of vector addition and scalar multiplication must satisfy certain requirements, called vector axioms.
 
 :::definition Vector space
 
@@ -57,6 +57,11 @@ If $(E, +, \cdot)$ is a $\mathbb{K}$-vector space, then :
 
 :::proof
 
-Let $x \in \mathbb{R}$ be the redondant value.
+1. If $0_E'$ is an other null vector, then with property (3) of vectors spaces, $0_E$ + $0_E' = 0_E'$ but also $0_E$ + $0_E' = 0_E$ hence $0_E = 0_E'$.
+2. If $u$ own two opposites denoted $v$ and $w$, then $v = v + 0 = v + (u + w) = (v + u) + w = 0_E + w = w$ (by successively applying (3) (4) (2) (4) (3))
+3. We have $\lambda \cdot 0_E = \lambda \cdot (0_E + 0_E) = \lambda \cdot 0_E + \lambda \cdot 0_E$ by successively applying the vector spaces properties (3) and (7), so, adding the opposite of $\lambda \cdot 0_E$, we found $0_E = \lambda \cdot 0_E$.
+4. We write $0_E \cdot u = (0_E + 0_E) \cdot u = 0_E \cdot u + 0_E \cdot u$ by applying (8) and we also conclude that $0_E \cdot u = 0_E$
+5. We suppose that $\lambda \cdot u = 0_E$ with $\lambda \neq 0_E$, and then we show $u = 0_E$. We have $u = 1 \cdot u = (\lambda^{-1}\lambda) \cdot u = \lambda^{-1} \cdot (\lambda \cdot u) = \lambda^{-1} \cdot 0_E = 0_E$
+6. We remark that $u + (-1) \cdot u = 1 \cdot u + (-1) \cdot u = (1 + (-1)) \cdot u = 0_E \cdot u = 0$ and we conclude thanks to the opposite unicity of $u$ that we have demonstrated in (2).
 
 :::
