@@ -288,5 +288,8 @@
   },
   "fields.algebra": {
     "message": "Algebra"
+  },
+  "fields.probabilities": {
+    "message": "Probabilities"
   }
 }

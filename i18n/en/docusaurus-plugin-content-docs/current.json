@@ -10,5 +10,13 @@
   "sidebar.tutorialSidebar.category.Algebra.link.generated-index.description": {
     "message": "Algebra is the study of variables and the rules for manipulating these variables in formulas; it is a unifying thread of almost all of mathematics.",
     "description": "The generated-index page description for category Algebra in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Probabilities": {
+    "message": "Probabilities",
+    "description": "The label for Probabilities Algebra in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Probabilities.link.generated-index.description": {
+    "message": "In science, the probability of an event is a number that indicates how likely the event is to occur. It is expressed as a number in the range from 0 and 1, or, using percentage notation, in the range from 0% to 100%. The more likely it is that the event will occur, the higher its probability.",
+    "description": "The generated-index page description for category Algebra in sidebar tutorialSidebar"
   }
 }

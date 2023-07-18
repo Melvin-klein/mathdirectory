@@ -13,6 +13,13 @@ export default function FieldList() {
                         </h2>
                     </Link>
                 </article>
+                <article className="field-item col col--6 margin-bottom--lg">
+                    <Link className="card padding--lg" to="/docs/category/probabilities">
+                        <h2 title="Algebra">
+                            <Translate id="fields.probabilities" />
+                        </h2>
+                    </Link>
+                </article>
             </section>
         </article>
     );
