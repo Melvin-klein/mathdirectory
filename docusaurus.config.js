@@ -77,6 +77,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'Math Directory',
         logo: {
@@ -105,16 +115,16 @@ const config = {
                 label: 'About',
               },
               {
-                to: '/write-a-course',
-                label: 'Write a course',
+                to: '/tutorials',
+                label: 'Tutorials',
+              },
+              {
+                to: '/guidelines',
+                label: 'Guidelines',
               },
               {
                 to: '/help-us-translate',
                 label: 'Help us translate',
-              },
-              {
-                to: '/code-of-conduct',
-                label: 'Code of conduct',
               },
             ],
           },

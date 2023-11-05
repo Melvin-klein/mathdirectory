@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import FieldList from '@site/src/components/FieldList/FieldList';
 import {translate} from '@docusaurus/Translate';
 
 import styles from './index.module.css';
@@ -51,11 +52,14 @@ export default function Home(): JSX.Element {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />">
+            title={`▷ Welcome`}
+            description="Math Directory try to describe the maximum of mathematical objects and their properties.">
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
+                <div className="container">
+                    <FieldList />
+                </div>
             </main>
         </Layout>
     );
