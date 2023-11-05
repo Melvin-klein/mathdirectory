@@ -58,6 +58,8 @@
 
 .field-item a {
   box-shadow: rgba(0, 0, 0, 0.15) 0 1.5px 3px 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all var(--ifm-transition-fast) ease;
   transition-property: border,box-shadow;
 }
 
