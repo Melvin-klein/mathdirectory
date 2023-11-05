@@ -203,7 +203,7 @@
   justify-content: start!important;
 }
 
-.buttons_src-pages-index-module .button {
+.hero__button.button {
   background-color: var(--ifm-color-primary-light);
   border: none;
   margin-right: 20px;
@@ -211,16 +211,16 @@
   font-weight: 300;
 }
 
-.buttons_src-pages-index-module .button--secondary {
+.hero__button.button--secondary {
   background-color: #1e293b!important;
   color: white;
 }
 
-.buttons_src-pages-index-module .button--secondary:hover {
+.hero__button.button--secondary:hover {
   background-color: #334155!important;
 }
 
-.buttons_src-pages-index-module .button:hover {
+.hero__button:hover {
   background-color: var(--ifm-color-primary-lightest);
 }
 
@@ -230,6 +230,10 @@ footer.footer {
 
 [data-theme='dark'] .menu {
   background-color: transparent;
+}
+
+.menu {
+  background-color: #f1f5f9;
 }
 
 @media screen and (max-width: 930px) {
@@ -260,7 +264,7 @@ footer.footer {
     justify-content: center!important;
   }
 
-  .buttons_src-pages-index-module button {
+  .hero__button {
     z-index: 50!important;
   }
 
@@ -288,10 +292,9 @@ footer.footer {
     flex-direction: column;
   }
 
-  .buttons_src-pages-index-module .button {
+  .hero__button {
     width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
   }
 
   .hero__math-svg {

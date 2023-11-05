@@ -27,12 +27,12 @@ function HomepageHeader() {
                     <p className="hero__subtitle">{translate({"message": "home.hero.tagline"})}</p>
                     <div className={styles.buttons}>
                         <Link
-                            className="button button--primary button--lg"
+                            className="hero__button button button--primary button--lg"
                             to="/docs/intro">
                             {translate({"message": "home.hero.button"})}
                         </Link>
                         <Link
-                            className="button button--secondary button--lg"
+                            className="hero__button button button--secondary button--lg"
                             to="https://github.com/Melvin-klein/mathdirectory"
                             target="_blank">
                             View on Github
