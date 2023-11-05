@@ -25,7 +25,7 @@ function HomepageHeader() {
                     <div className="hero__lead">Welcome to the</div>
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{translate({"message": "home.hero.tagline"})}</p>
-                    <div className={styles.buttons}>
+                    <div className={"hero__button-container " + styles.buttons}>
                         <Link
                             className="hero__button button button--primary button--lg"
                             to="/docs/intro">
