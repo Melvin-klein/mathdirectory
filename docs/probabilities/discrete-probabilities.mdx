@@ -1,60 +1,77 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Discrete probabilities
 
-## Vocabulary
+## Requirements
 
-:::definition Random experiment
-
-A random experiment is any experiment $\mathcal{E}$  which, depending on chance, leads to several possible results.
-The universe associated with $\mathcal{E}$ is the set $\Omega$ of all possible outcomes of $\mathcal{E}$.
-
+:::caution
+If you are new to probabilities, you may want to learn the basics. To do that, please read this [introductory course](elementary-probabilities).
 :::
 
+:::info
+Before starting this course, you should read this two blog posts :
 
-## Uniform probability
-
-:::proposition
-
-The formula
-
-$$
-    \mathbb{P}(A) := \sum_{\omega \in A} p_\omega, \quad \forall A \in \mathcal{P}(\Omega),
-$$
-
-define a probability $\mathbb{P}$ on $(\Omega, \mathcal{P}(\Omega))$ as soon as the real numbers family $(p_\omega)_{\omega \in \Omega}$ verify :
-
-1. $p_\omega \in [0, 1]$ for all $\omega \in \Omega$,
-2. $\sum_{\omega \in \Omega} p_\omega = 1$
-
-Conversely, any probability $\mathbb{P}$ on $(\Omega, \mathcal{P}(\Omega))$ is of this form: simply put
-
-$$
-
-p_\omega := \mathbb{P}(\{\omega\}), \quad \forall \omega \in \Omega
-
-$$
-
+- [Why do we use Lebesgue integration for probabilities ?](../../blog/why-do-we-use-lebesgue-integration-for-probabilities)
+- [Discrete probabilities versus continuous probabilities](../../blog/discrete-probabilities-vs-continuous-probabilities)
 :::
 
-:::definition Uniform law
+## Definitions
 
-Let $\mathbb{P}$ be a probability on $(\Omega, \mathcal{P}(\Omega))$ with $\Omega$ finite. We say that $\mathbb{P}$ is the uniform law on $\Omega$ if all events $\omega \in \Omega$ are equiprobable : i.e.
+:::definition probability
+Let $(\Omega, \mathcal{A})$ be a measurable or probabilisable space.
+We call *probability* on $(\Omega, \mathcal{A})$ all application $\mathbb{P} : \mathcal{A} \rightarrow [0,1]$ such that :
 
-$$
-
-p_\omega = \frac{1}{|\Omega|}
-
-$$
-
-In particular we have
+- $\mathbb{P}(\Omega) =  1$
+- For all families $(A_n)_{n \in \mathbb{N}}$ of pairwise disjoint sets of $\mathcal{A}$, we have
 
 $$
+    \mathbb{P}(\bigcup_{n \in \mathbb{N}} A_n) = \sum_{n \in \mathbb{N}} \mathbb{P}(A_n)
+$$
+:::
 
-\mathbb{P}(A) = \frac{|A|}{|\Omega|}, \quad \forall A \subset \Omega.
+:::definition probability space
+A triplet $(\Omega, \mathcal{A}, \mathbb{P})$ is called a probability space.
+:::
+
+## Discrete random variables
+
+:::definition random variables
+Let $(F, \mathcal{B})$ be a measurable space.
+We call **random variable** defined on $(\Omega, \mathcal{A}, \mathbb{P})$ and having values in $F$,
+any measurable application $X : \Omega \rightarrow F$, i.e. satisfaying for all $B \in \mathcal{B},
+X^{-1}(B) \in \mathcal{A}$ with
 
 $$
+    X^{-1}(B) = \{\omega \in \Omega \textnormal{ such that } X(\omega) \in B\}
+$$
 
+We say that $X$ is a **discrete random variable** if its surrounding area $X(\Omega)$ is finite or countably infinite.
+
+More generally if there exists a discrete set (finite ou countably infinite) $B \in X(\Omega)$ such that
+$\mathbb{P}(X \in B) = 1$ we also say that $X$ is a random variable. We then call the support of $X$
+the smallest discrete set $\tilde{B}$ verifying $\mathbb{P}(X \in \tilde{B}) = 1$.
+In practice, $X(\Omega)$ is still called the support of $X$, which is clearly an abuse of notation.
+:::
+
+## Laws of discrete probabilities
+
+:::definition and proposition : law of probability
+Let $X$ be a random variable. We call law of probability of $X$ the probability measure $\mathbb{P}_X$
+defined on $(F, \mathcal{B})$ on :
+
+$$
+\mathbb{P}_X(B) := \mathbb{P}(X^{-1}(B)) = \mathbb{P}(X \in B), \quad \forall B \in \mathcal{B}
+$$
+
+This is the image measure of $\mathbb{P}$ by $X$
+:::
+
+:::proof
+First of all, $\mathbb{P}_X$ is well defined : if $B \in \mathcal{B}$, then $(X \in B) \in \mathcal{A}$,
+i.e. this is a random event, because $X$ is measurable. In particular, $\mathbb{P}(X \in B)$ makes sens.
+We also have $\mathbb{P}_X(B)$ = $\mathbb{P}(X \in B) \in [0, 1]$ and
+$\mathbb{P}_X(F)$ = $\mathbb{P}(X \in F) = \mathbb{P}(\Omega) = 1$. Now let $(B_n)_{n \geq 1}$
+be a family of 
 :::

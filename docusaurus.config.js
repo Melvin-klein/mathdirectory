@@ -12,7 +12,7 @@ const proof = require('./src/remark/proof');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Math Directory',
-  tagline: 'The Math Directory community seeks to make mathematical knowledge accessible to as many people as possible. Do not hesitate to contribute!',
+  tagline: 'The Math Directory seeks to make mathematical knowledge accessible to as many people as possible. Do not hesitate to contribute!',
   url: 'https://www.mathdirectory.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -86,7 +86,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            label: 'Learn',
+            label: 'Directory',
             position: 'left',
             docId: 'intro'
           },

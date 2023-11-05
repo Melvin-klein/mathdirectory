@@ -1,0 +1,60 @@
+---
+sidebar_position: 1
+---
+
+# Elementary probabilities
+
+## Vocabulary
+
+:::definition Random experiment
+
+A random experiment is any experiment $\mathcal{E}$  which, depending on chance, leads to several possible results.
+The universe associated with $\mathcal{E}$ is the set $\Omega$ of all possible outcomes of $\mathcal{E}$.
+
+:::
+
+
+## Uniform probability
+
+:::proposition
+
+The formula
+
+$$
+    \mathbb{P}(A) := \sum_{\omega \in A} p_\omega, \quad \forall A \in \mathcal{P}(\Omega),
+$$
+
+define a probability $\mathbb{P}$ on $(\Omega, \mathcal{P}(\Omega))$ as soon as the real numbers family $(p_\omega)_{\omega \in \Omega}$ verify :
+
+1. $p_\omega \in [0, 1]$ for all $\omega \in \Omega$,
+2. $\sum_{\omega \in \Omega} p_\omega = 1$
+
+Conversely, any probability $\mathbb{P}$ on $(\Omega, \mathcal{P}(\Omega))$ is of this form: simply put
+
+$$
+
+p_\omega := \mathbb{P}(\{\omega\}), \quad \forall \omega \in \Omega
+
+$$
+
+:::
+
+:::definition Uniform law
+
+Let $\mathbb{P}$ be a probability on $(\Omega, \mathcal{P}(\Omega))$ with $\Omega$ finite. We say that $\mathbb{P}$ is the uniform law on $\Omega$ if all events $\omega \in \Omega$ are equiprobable : i.e.
+
+$$
+
+p_\omega = \frac{1}{|\Omega|}
+
+$$
+
+In particular we have
+
+$$
+
+\mathbb{P}(A) = \frac{|A|}{|\Omega|}, \quad \forall A \subset \Omega.
+
+$$
+
+:::
