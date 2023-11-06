@@ -65,28 +65,3 @@ If $(E, +, \cdot)$ is a $\mathbb{K}$-vector space, then :
 6. We remark that $u + (-1) \cdot u = 1 \cdot u + (-1) \cdot u = (1 + (-1)) \cdot u = 0_E \cdot u = 0$ and we conclude thanks to the opposite unicity of $u$ that we have demonstrated in (2).
 
 :::
-
----
-
-:::proposition Vector space axioms
-
-If $(E, +, \cdot)$ is a $\mathbb{K}$-vector space, then :
-1. Its null vector is unique
-2. Every vector of $E$ has a unique opposite
-3. $\lambda \cdot 0 = 0$ for all $\lambda \in \mathbb{K}$
-4. $0 \cdot u = 0$ for all $u \in E$
-5. If $\lambda \cdot u = 0$ then $\lambda = 0$ or $u = 0$
-6. $-u = (-1) \cdot u$ for all $u \in E$
-
-:::
-
-:::proof
-
-1. If $0_E'$ is an other null vector, then with property (3) of vectors spaces, $0_E$ + $0_E' = 0_E'$ but also $0_E$ + $0_E' = 0_E$ hence $0_E = 0_E'$.
-2. If $u$ own two opposites denoted $v$ and $w$, then $v = v + 0 = v + (u + w) = (v + u) + w = 0_E + w = w$ (by successively applying (3) (4) (2) (4) (3))
-3. We have $\lambda \cdot 0_E = \lambda \cdot (0_E + 0_E) = \lambda \cdot 0_E + \lambda \cdot 0_E$ by successively applying the vector spaces properties (3) and (7), so, adding the opposite of $\lambda \cdot 0_E$, we found $0_E = \lambda \cdot 0_E$.
-4. We write $0_E \cdot u = (0_E + 0_E) \cdot u = 0_E \cdot u + 0_E \cdot u$ by applying (8) and we also conclude that $0_E \cdot u = 0_E$
-5. We suppose that $\lambda \cdot u = 0_E$ with $\lambda \neq 0_E$, and then we show $u = 0_E$. We have $u = 1 \cdot u = (\lambda^{-1}\lambda) \cdot u = \lambda^{-1} \cdot (\lambda \cdot u) = \lambda^{-1} \cdot 0_E = 0_E$
-6. We remark that $u + (-1) \cdot u = 1 \cdot u + (-1) \cdot u = (1 + (-1)) \cdot u = 0_E \cdot u = 0$ and we conclude thanks to the opposite unicity of $u$ that we have demonstrated in (2).
-
-:::

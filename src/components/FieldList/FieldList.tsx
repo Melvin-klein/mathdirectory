@@ -21,6 +21,15 @@ export default function FieldList() {
                     </Link>
                 </article>
             </section>
+            <section className="row">
+                <article className="field-item col col--6 margin-bottom--lg">
+                    <Link className="card padding--lg" to="/docs/category/analysis">
+                        <h2 title="Analysis">
+                            <Translate id="fields.analysis" />
+                        </h2>
+                    </Link>
+                </article>
+            </section>
         </article>
     );
 }

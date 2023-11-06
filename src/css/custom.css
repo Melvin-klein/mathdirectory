@@ -46,10 +46,11 @@
 }
 
 .proof-details {
-  background-color: rgb(253, 253, 254);
+  background-color: #f8fafc;
   color: rgb(71, 71, 72);
   --docusaurus-details-decoration-color: #1e293b!important;
-  border: 1px solid rgb(212, 213, 216)!important
+  border: 1px solid rgb(212, 213, 216)!important;
+  border-radius: 0;
 }
 
 .proof-content p {
@@ -236,6 +237,20 @@ footer.footer {
 
 .menu {
   background-color: #f1f5f9;
+}
+
+.menu__link {
+  color: #1e293b;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.menu__link--active {
+  color: var(--ifm-color-primary);
+}
+
+.theme-admonition {
+  border-radius: 0;
 }
 
 @media screen and (max-width: 930px) {

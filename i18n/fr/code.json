@@ -286,6 +286,9 @@
   "home.items.third.title": {
     "message": "Communautaire"
   },
+  "fields.analysis": {
+    "message": "Analyse"
+  },
   "fields.algebra": {
     "message": "Algèbre"
   }
