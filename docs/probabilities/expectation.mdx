@@ -1,5 +1,9 @@
 # Expectation
 
+:::info
+This section is waiting for [contributions](/contributing).
+:::
+
 ## Definition
 
 :::definition
@@ -12,6 +16,18 @@ $$
 
 ## Results
 
-:::info
-This section is waiting for [contributions](/contributing).
+The following proposition calculates the expectation of a random variable without knowing its density.
+
+:::proposition Transfert function
+Let $X$ be a random variable with density $f$, and $h$ a real measurable function. Assume that
+
+$$
+\int_\mathbb{R}|h(x)|f(x)dx < +\infty
+$$
+
+Then, if we set Y = h(X), Y is an integrable random variable and
+
+$$
+\mathbb{E}[Y] = \mathbb{E}[h(X)] = \int_\mathbb{R}h(x)f(x)dx
+$$
 :::
