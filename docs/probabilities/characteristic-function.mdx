@@ -1,0 +1,77 @@
+# Characteristic function
+
+:::info
+This section is waiting for [contributions](/contributing).
+:::
+
+## Definition
+
+:::definition
+Let $X$ be a real-valued random variable, the **characteristic function** of $X$ is the function $\phi_X : \mathbb{R} \rightarrow \mathbb{C}$, given by :
+
+$$
+\phi_X(t) = \mathbb{E}[e^{itX}], \quad \forall t \in \mathbb R
+$$
+:::
+
+---
+
+:::definition Characteristic function of random vector
+Let $X = (X_1, \dots, X_n)$ a real-valued random vector in $\mathbb R^n$.
+We call **characteristic function** of $X$ the function $\phi : \mathbb R^n \rightarrow \mathbb C$ defined by
+
+$$
+\phi(t) := \mathbb E[e^{i \langle t, W \rangle}] = \mathbb E[e^{i\sum_{k=1}{n} t_kX_k}], \quad \forall t = (t_1, \dots, t_n) \in \mathbb R^n
+$$
+
+In particular, if $X$ is discrete, we have
+
+$$
+\begin{equation}
+\begin{split} \phi(t) & = \sum_{x \in X(\Omega)} e^{i\langle t, x\rangle}\mathbb P(X = x) \\
+& = \sum_{x \in X_1(\Omega)} \dots \sum_{x \in X_n(\Omega)}e^{i\sum_{k=1}^nt_kx_k}\mathbb P(X_1 = x_1, \dots, X_n = x_n),
+\end{split}
+\end{equation}
+$$
+
+and if $f$ is the density of a random variable $X$, we have
+
+$$
+\begin{equation}
+\begin{split}\phi(t) & = \int_{\mathbb R^n} e^{i\langle t, x\rangle}f(x)dx \\
+& = \int_{\mathbb R^n} e^{i\sum_{k=1}^nt_kx_k} f(x_1, \dots, x_n)dx_1\dots dx_n.
+\end{split}
+\end{equation}
+$$
+:::
+
+## Results
+
+:::proposition
+- $\phi_X$ is well defined on $\mathbb R$.
+- $\phi_X(0) = 1$ and $|\phi_X(t)| \leq 1$ pour tout $t \in \mathbb R$.
+- If $X$ is a discrete random variable,
+$$
+\phi_X(t) = \sum_{x\in X(\Omega)} e^{itx}\mathbb P(X = x).
+$$
+- If $X$ is a random variable of density $f$,
+$$
+\phi_X(t) = \int_{R} e^{itx}f(x)dx,
+$$
+It's the fourier transform of $f$.
+:::
+
+---
+
+:::proposition
+- $\phi$ characterises the distribution of $X$.
+- $\phi$ is uniformly continuous on $\mathbb R$.
+- $\forall n \geq 1$, if $\mathbb E [|X|^n] < + \infty$, then $\phi$ is derivable up to order n and for all $1 \leq k \leq n$,
+$$
+\phi(t)^{(k)}(t) = i^k\mathbb E[X^ke^{itX}], \quad \phi^{(k)}(0) = i^k\mathbb E[X^k].
+$$
+In addition, in the vicinity of 0, we have
+$$
+\phi(t) = \sum_{k=0}^n \frac{(it)^k}{k!}\mathbb E[X^k] + o(|t|^n)
+$$
+:::
