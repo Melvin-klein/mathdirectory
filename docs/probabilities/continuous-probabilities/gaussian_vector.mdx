@@ -1,0 +1,71 @@
+# Gaussian vector
+
+## Definition
+
+:::definition
+$X$ is said to be a Gaussian Vector if any linear combination of its components is
+Gaussian (possibly degenerate i.e. almost sure constant). This means that :
+
+$$
+\forall a \in \mathbb R^d, \quad a^TX \sim \mathcal N (a^Tm_x, a^T\Gamma_Xa).
+$$
+:::
+
+## Results
+
+:::theorem
+X is said to be a Gaussian vector if and only if its characteristic function is written as :
+
+$$
+\forall \xi \in \mathbb R^d, \quad \Phi_X(\xi) = exp(i\xi^Tm-\frac{1}{2}\xi^T\Gamma\xi)
+$$
+:::
+
+:::proof
+It suffices to apply the definition, remembering that the characteristic function of the Gaussian distribution $\mathcal N(m, \sigma^2)$ is $\xi \rightarrow e^{im\xi-\frac{\sigma^2\xi^2}{2}}$. For the converse, with the characteristic function that $\xi^TX$ follows a Gaussian distribution for all $\xi \in \mathbb R^d$.
+:::
+
+---
+
+:::theorem
+Let $X$ be a Gaussian vector of $\mathbb R^d$ with expectation $m$ and covariance matrix $\Gamma$. Then $X$ has a density if and only if $\Gamma$ is invertible, in which case the density is written as :
+
+$$
+f_X(x) = \frac{1}{\sqrt{det(2\pi\Gamma)}}exp \left (-\frac{1}{2}(x-m)^T\Gamma^{-1}(x-m)\right )
+$$
+:::
+
+:::proof
+It exists $U \in \mathcal O(n)$ (i.e, $UU^T = U^TU = I$) such that $U^T \Gamma U = D = diag(\sigma^2_1,\dots,\sigma^2_d)$.
+Since $\Gamma$ is invertible, we have $\sigma^2_i > 0$.
+Let $R = Udiag(\sigma_1,\dots,\sigma_d)U^T$ that verify $R^2 = \Gamma$.
+Let $Z \sim \mathcal N(0, I_d)$ ($Z$ is the vector with its coordinates i.i.d. normal and centered and with variance $1$), $m + RZ \sim \mathcal N(m, \Gamma)$ and then $X$ and $m+RZ$ have the same law.
+Thus, for any function $\varphi : \mathbb R^d \rightarrow \mathbb R$ mesurable $\geq 0$,
+
+$$
+\mathbb E[\varphi(X)] = \mathbb E[\varphi(m+RZ)] = \frac{1}{(2\pi)^{\frac{d}{2}}} \int_{\mathbb R^d} \varphi(m + Rz)e^{-\frac{||z||^2}{2}}dz.
+$$
+
+Change the affine variable $x = m+Rz$. We have
+
+$$
+dz = |det(R^-1)|dx = \frac{dx}{|det(R)|} = \frac{dx}{\sqrt{det(D)}} = \frac{dx}{\sqrt{det(\Gamma)}}
+$$
+
+that gives
+
+$$
+\mathbb E[\varphi(X)] = \frac{1}{(2\pi)^{\frac{d}{2}}}\frac{1}{\sqrt{det(\Gamma)}}\int_{\mathbb R^d} \varphi(x)exp\left (- \frac{||R^{-1}(x-m||^2}{2} \right )dx.
+$$
+
+However
+
+$$
+\begin{equation}
+\begin{split}||R^{-1}(x-m)||^2 & = (x-m)^TR^{-1}R^{-1}(x-m) \\
+& = (x-m)^T(R^2)^{-1}(x-m) \\
+& = (x-m)^T\Gamma^{-1}(x-m).
+\end{split}
+\end{equation}
+$$
+:::
