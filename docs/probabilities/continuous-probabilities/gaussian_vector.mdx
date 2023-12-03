@@ -69,3 +69,34 @@ $$
 \end{equation}
 $$
 :::
+
+---
+
+:::theorem
+Let $X$ and $Y$ be gaussian vectors of $\mathbb R^p$ and $\mathbb R^q$ respectively. We assume that the vector $Z = (X^T, Y^T)$ is gaussian.
+Then $X, Y$ are independant if and only if for all $i,j, Cov(X_i, Y_j) = 0$
+:::
+
+:::proof
+The direct implication is obvious. For the converse, if $X, Y$ are decorrelated, then the matrix of
+covariance $Z$ is written as
+
+$$
+\Gamma_Z = \begin{pmatrix}
+\Gamma_X & 0\\
+0 & \Gamma_Y
+\end{pmatrix}
+$$
+
+But as $Z$ is Gaussian, its characteristic function is written as
+
+$$
+\mathbb E[e^{i\zeta^TZ}] = e^{im_Z\zeta-\frac{1}{2}\zeta^T\Gamma_Z\zeta}
+$$
+
+or also
+
+$$
+\mathbb E[e^{i(\xi^TX + \eta^TY)}] = e^{i(m_X\xi+m_Y\eta)-\frac{1}{2}(\xi^T\Gamma_X\xi+\eta^t\Gamma_Y\eta)} = \mathbb E[e^{i\xi X}]\mathbb E[e^{i\eta Y}]
+$$
+:::
