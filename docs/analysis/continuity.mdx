@@ -1,0 +1,121 @@
+# Continuity
+
+:::info
+This section is waiting for [contributions](/contributing).
+:::
+
+## Functions of one variable
+
+### Definition
+
+:::definition Continuity at one point
+Let $f$ be a function defined on an interval $I$ of $\mathbb R$ and has values in $\mathbb R$.
+Let $x_0$ be an element of $I$. The function $f$ is said to be continuous in $x_0$ if :
+
+$$
+\forall \epsilon > 0, \exists \delta > 0, \forall x \in I, |x_0 - x| < \delta \Longrightarrow |f(x_0) - f(x)| < \epsilon
+$$
+:::
+
+:::definition Continuity
+Let $f$ be a function defined on an interval $I$ of $\mathbb R$ and has values in $\mathbb R$.
+The function $f$ is said to be continuous if for all $x$ in $\mathbb R$, $f$ is continuous in $x$.
+:::
+
+### Results
+
+:::proposition
+Let $f,g : I \subset \mathbb R \rightarrow \mathbb R$ be two continuous functions at a point $x_0 \in I$. Then :
+
+- $\lambda \cdot f$ is continuous at $x_0$ (for all $\lambda \in \mathbb R$),
+- $f + g$ is continuous at $x_0$,
+- $f \times g$ is continuous at $x_0$,
+- if $f(x_0) \neq 0$, then frac{1}{f} is continuous at $x_0$.
+:::
+
+:::theorem Intermediate value theorem
+Let $f$ be a continuous function on $\mathbb R$.
+Let $I$ be an interval of $\mathbb R$ and let $a, b \in I$ such that $a < b$ and $f(a)f(b) < 0$.
+Then the equation $f(x) = 0$ has at least one solution on the interval $[a, b] \in I$.
+:::
+
+:::proof
+
+Even if we consider the function $−f$, we can assume without loss of generality that $f(a) < 0 < f(b)$
+(the case where $f(a)=0$ or $f(b)=0$ being direct).
+Let $\mathcal A={x \ in [a,b] | f(x) < 0}$.
+Then $\mathcal A$ is not empty and upper bounded (because $a \in \mathcal A$ and is upper bounded by $b$).
+Thus, the set $\mathcal A$ has an upper bound. We note it $\alpha$.
+Because of the continuity of $f$ on the interval $I$, there exists $\eta > 0$ such that :
+
+$$
+\forall x \in [a, a+\eta] \subset [a, b], f(x) \leq 0
+$$
+
+and
+
+$$
+\forall x \in [b - \eta, b] \subset [a, b], f(x) > 0
+$$
+
+We then have $a < a + \eta \leq \alpha \leq b - \eta < b$.
+Thus, we have $\alpha \in ]a, b[$ and therefore there exists an integer $n_0$ such that :
+
+$$
+\left ]\alpha - \frac{1}{n_0}, \alpha + \frac{1}{n_0} \right [ \subset ]a, b[
+$$
+
+We therefore have for all $n > n_0$ that there exist real numbers
+$x_n \in \left ]\alpha, \alpha - \frac{1}{n_0} \right [$ and
+$y_n \in \left ]\alpha, \alpha + \frac{1}{n_0} \right [$.
+We have built two sequences which converge towards $\alpha$.
+Furthermore, we have by construction that :
+
+$$
+f(\alpha) = lim_{n \rightarrow + \infty} f(x_n) \leq 0 \leq lim_{n \rightarrow + \infty} f(y_n) = f(\alpha)
+$$
+
+We then deduce that $f(\alpha) = 0$. This completes the proof.
+:::
+
+Source of proof : [progresser-en-maths.com](https://progresser-en-maths.com/theoreme-des-valeurs-intermediaires-cours-et-exercices-corriges/)
+
+:::theorem Bounds reached
+If $f : [a, b] \rightarrow \mathbb R$ is a continuous function, then $f$ is bounded and reaches its bounds.
+:::
+
+:::proof
+We suppose that $f$ is not bounded.
+Then $\forall A > 0, \exists x \in [a,b], f(x) > A$.
+
+By taking $A = n$, we get $\exists x_n \in [a,b], f(x_n) > n$.
+
+Therefore $lim_{n \rightarrow + \infty} f(x_n) = + \infty$.
+
+According to the theorem of Bolzano-Weiestrass,
+there exists $\phi : \mathbb N \rightarrow \mathbb N$ strictly increasing
+such that $x_{\phi(n)}$ converges towards a limit $l$.
+
+Then, by continuity, $lim_{n \rightarrow + \infty} f(x_{\phi(n)}) = f(l) \neq + \infty$
+We therefore end up with a contradiction. Thus, $f$ is increased.
+
+The set $f([a,b])$ being upper bounded it admits an upper bound which we will note $M$.
+We therefore have:
+
+$$
+\forall \epsilon > 0, \exists x \in [a,b], M-\epsilon < f(x) \leq M
+$$
+
+Let's take $\epsilon = \frac{1}{n}$. We therefore have, $\exists x_n \in [a,b], M - \frac{1}{n} < f(x_n) \leq M$.
+
+We then obtain, according to the squeeze theorem, that, $lim_{n \rightarrow + \infty} f(x_n) = M$.
+
+Furthermore, according to the theorem of Bolzano-Weierstrass, we have the existence of $\phi : \mathbb N \rightarrow \mathbb N$ strictly increasing such that $x_{\phi(n)}$ converges towards a limit $l$.
+
+And since $f$ is continuous, we have $lim_{n \rightarrow + \infty} f(x_n) = f(l)$.
+Hence, $f(l) = M$. $f$ reaches therefore its upper bound $l$ in $M$.
+
+Similarly, we can do the same thing on the lower bound.
+:::
+
+Source of proof : [progresser-en-maths.com](https://progresser-en-maths.com/theoreme-des-bornes-atteintes-cours-demonstration-et-exercices-corriges/)
