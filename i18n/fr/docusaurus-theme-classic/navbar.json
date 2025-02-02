@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "Math Directory",
+    "message": "Le répertoire des mathématiques",
     "description": "The title in the navbar"
   },
-  "item.label.Learn": {
-    "message": "Apprendre",
+  "item.label.Directory": {
+    "message": "Répertoire",
     "description": "Navbar item with label Learn"
   },
   "item.label.Blog": {
@@ -13,6 +13,22 @@
   },
   "item.label.Contributing": {
     "message": "Contribuer",
+    "description": "Navbar item with label Contributing"
+  },
+  "item.label.About": {
+    "message": "À propos",
+    "description": "Navbar item with label Contributing"
+  },
+  "item.label.Tutorials": {
+    "message": "Tutoriels",
+    "description": "Navbar item with label Contributing"
+  },
+  "item.label.Guidelines": {
+    "message": "État d'esprit",
+    "description": "Navbar item with label Contributing"
+  },
+  "item.label.Help us translate": {
+    "message": "Aidez-nous à traduire",
     "description": "Navbar item with label Contributing"
   },
   "item.label.GitHub": {

@@ -262,11 +262,20 @@
     "message": "Tags",
     "description": "The title of the tag list page"
   },
+  "home.hero.leadtext": {
+    "message": "Bienvenue sur le"
+  },
+  "home.hero.site": {
+    "message": "Répertoire des mathématiques"
+  },
   "home.hero.tagline": {
-    "message": "La communauté Math Directory souhaite rendre les connaissances mathématiques accessibles au plus grand nombre de personnes. N'hésitez pas à contribuer!"
+    "message": "Le projet MathDirectory souhaite rendre les connaissances mathématiques accessibles au plus grand nombre de personnes. N'hésitez pas à contribuer!"
   },
   "home.hero.button": {
-    "message": "Commencer à apprendre"
+    "message": "Consulter le répertoire"
+  },
+  "home.hero.github": {
+    "message": "Voir sur Github"
   },
   "home.items.first.content": {
     "message": "Tous les cours et les ressources que vous trouverez sur Math Directory sont gratuits. Profitez-en pleinement!"
@@ -291,5 +300,8 @@
   },
   "fields.algebra": {
     "message": "Algèbre"
+  },
+  "fields.probabilities": {
+    "message": "Probabilités"
   }
 }

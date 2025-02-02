@@ -23,8 +23,8 @@ function HomepageHeader() {
                      className="hero__blur-indigo" style={{color: "transparent"}}
                      src={require('@site/static/img/blur-cyan.png').default}/>
                 <div className="hero__text-container">
-                    <div className="hero__lead">Welcome to the</div>
-                    <h1 className="hero__title">{siteConfig.title}</h1>
+                    <div className="hero__lead">{translate({"message": "home.hero.leadtext"})}</div>
+                    <h1 className="hero__title">{translate({"message": "home.hero.site"})}</h1>
                     <p className="hero__subtitle">{translate({"message": "home.hero.tagline"})}</p>
                     <div className={"hero__button-container " + styles.buttons}>
                         <Link
@@ -36,7 +36,7 @@ function HomepageHeader() {
                             className="hero__button button button--secondary button--lg"
                             to="https://github.com/Melvin-klein/mathdirectory"
                             target="_blank">
-                            View on Github
+                            {translate({"message": "home.hero.github"})}
                         </Link>
                     </div>
                 </div>

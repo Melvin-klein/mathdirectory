@@ -262,11 +262,20 @@
     "message": "Tags",
     "description": "The title of the tag list page"
   },
+  "home.hero.leadtext": {
+    "message": "Welcome to the"
+  },
+  "home.hero.site": {
+    "message": "Math Directory"
+  },
   "home.hero.tagline": {
-    "message": "The Math Directory seeks to make mathematical knowledge accessible to as many people as possible. Do not hesitate to contribute!"
+    "message": "The Math Directory project seeks to make mathematical knowledge accessible to as many people as possible. Do not hesitate to contribute!"
   },
   "home.hero.button": {
     "message": "Open the directory"
+  },
+  "home.hero.github": {
+    "message": "View on Github"
   },
   "home.items.first.content": {
     "message": "All the courses and resources you will find on Math Directory are free of charge. Take full advantage of it!"

@@ -3,7 +3,7 @@
     "message": "Math Directory",
     "description": "The title in the navbar"
   },
-  "item.label.Learn": {
+  "item.label.Directory": {
     "message": "Learn",
     "description": "Navbar item with label Learn"
   },

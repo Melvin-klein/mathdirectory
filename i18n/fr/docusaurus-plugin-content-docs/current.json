@@ -3,8 +3,24 @@
     "message": "Next",
     "description": "The label for version current"
   },
+  "sidebar.tutorialSidebar.Get Started": {
+    "message": "Pour commencer",
+    "description": "The label for category Algebra in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Algebra": {
     "message": "Algèbre",
+    "description": "The label for category Algebra in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Analysis": {
+    "message": "Analyse",
+    "description": "The label for category Algebra in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Common Functions": {
+    "message": "Fonction usuelles",
+    "description": "The label for category Algebra in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Probabilities": {
+    "message": "Probabilités",
     "description": "The label for category Algebra in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Algebra.link.generated-index.description": {
