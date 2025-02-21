@@ -1,0 +1,44 @@
+# Binomial coefficient
+
+## Definition
+
+:::definition
+Let $n$ and $p$ be two natural integers, we call binomial coefficient, and we note $\binom{n}{p}$, the following number
+
+$$
+\binom{n}{p} = \frac{n!}{p!(n-p)!}
+$$
+:::
+
+:::remark
+For all $n \in \mathbb N$, we have $\binom{n}{0} = \binom{n}{n} = 1$
+:::
+
+## Results
+
+:::proposition
+For all $(n, p) \in \mathbb N^2$ such that $n \geq p \geq 1$, we have
+
+$$
+\binom{n}{p} = \frac{n}{p} \binom{n-1}{p-1} = \frac{n-p+1}{p}\binom{n}{p-1}
+$$
+:::
+
+:::proof
+It is straightforward from the definition by putting $p$ in the denominator and in the numerator the first or the last term.
+:::
+
+:::proposition
+Let $n$ and $p$ be two natural integers, we have
+
+$$
+\begin{align}
+\binom{n}{p} = & \binom{n}{n-p} \quad \text{if} \quad p \leq n. \\
+\binom{n}{p} = & \binom{n-1}{p} + \binom{n-1}{p-1} \quad \text{if} \quad p \geq 1
+\end{align}
+$$
+:::
+
+:::proof
+By calculation, from the definition of $\binom{n}{p}$.
+:::
