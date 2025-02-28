@@ -155,6 +155,10 @@ const config = {
                 label: 'Algebra',
                 to: '/docs/category/algebra',
               },
+              {
+                label: 'Analysis',
+                to: '/docs/category/algebra',
+              },
             ],
           },
           {
@@ -188,7 +192,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Built with Docusaurus.`,
+        copyright: `Melvine Nargeot. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

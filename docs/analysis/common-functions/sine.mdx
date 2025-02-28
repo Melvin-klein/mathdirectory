@@ -2,6 +2,57 @@
 
 ## Definition
 
-:::definition
+:::definition By power series
+Let $x \in \mathbb R$, we define the sine function as
 
+$$
+\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} + \dots + (-1)^k \frac{x^{2k+1}}{(2k+1)!} + \dots = \sum_{n=0}^{+\infty}(-1)^n\frac{x^{2n+1}}{(2n+1)!}.
+$$
+:::
+
+:::definition By differential equation
+The sine function is the unique solution of the following Cauchy problem
+
+$$
+y'' = -y, \quad y(0) = 0, \quad y'(0) = 1
+$$
+:::
+
+## Results
+
+:::proposition Addition formula
+Let $a, b \in \mathbb R$, we have
+$$
+\begin{align}
+    \sin(a+b) & = \cos(a)\sin(b) + \sin(a)\cos(b). \\
+    \sin(2a) & = 2\cos(a)\sin(a) \\
+    \sin(\pi - a) & = sin(a) \\
+    \sin(\pi + a) & = - sin(a) \\
+    \sin(\frac{\pi}{2} - a) & = cos(a)
+\end{align}
+$$
+:::
+
+:::proposition Derivative
+Let $x \in \mathbb R$, we have
+
+$$
+\sin'(x) = \cos(x)
+$$
+:::
+
+:::proposition Fundamental relation
+Let $x \in \mathbb R$, we have
+
+$$
+\sin^2(x) + \cos^2(x) = 1
+$$
+:::
+
+:::proposition Outstanding values
+Some outstanding values to keep in mind
+
+$$
+\sin(0) = 0, \quad \sin \left (\frac{\pi}{6} \right ) = \frac{1}{2}, \quad \sin \left (\frac{\pi}{4} \right ) = \frac{\sqrt 2}{2}, \quad \sin \left (\frac{\pi}{3} \right ) = \frac{\sqrt 3}{2}, \quad \sin \left ( \frac{\pi}{2} \right ) = 1.
+$$
 :::

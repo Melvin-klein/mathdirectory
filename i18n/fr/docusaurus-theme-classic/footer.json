@@ -36,7 +36,7 @@
     "description": "The label of footer link with label=Contributors linking to /docs/intro"
   },
   "copyright": {
-    "message": "Licence MIT 2022 Math Directory. Construit avec Docusaurus.",
+    "message": "Melvine Nargeot. 2025. Construit avec Docusaurus.",
     "description": "The footer copyright"
   }
 }

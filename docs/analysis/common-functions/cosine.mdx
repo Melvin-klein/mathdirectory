@@ -1,0 +1,58 @@
+# Cosine
+
+## Definition
+
+:::definition By power series
+Let $x \in \mathbb R$, we define the cosine function as
+
+$$
+\cos(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} + \dots + (-1)^n \frac{x^{2n}}{(2n)!} + \dots = \sum_{n=0}^{+\infty}(-1)^n\frac{x^{2n}}{(2n)!}
+$$
+:::
+
+:::definition By differential equation
+The cosine function is the unique solution of the following Cauchy problem
+
+$$
+y'' = -y, \quad y(0) = 1, \quad y'(0) = 0
+$$
+:::
+
+## Results
+
+:::proposition Addition formula
+Let $a, b \in \mathbb R$, we have
+$$
+\begin{align}
+    \cos(a+b) & = \cos(a)\cos(b) - \sin(a)\sin(b) \\
+    \cos(2a) & = \cos^2(a) - \cos^2(a) \\
+    \cos(\pi - a) & = - \cos(a) \\
+    \cos(\pi + a) & = - \cos(a) \\
+    \cos(\frac{\pi}{2} - a) & = \sin(a)
+\end{align}
+$$
+:::
+
+:::proposition Derivative
+Let $x \in \mathbb R$, we have
+
+$$
+\cos'(x) = -\sin(x)
+$$
+:::
+
+:::proposition Fundamental relation
+Let $x \in \mathbb R$, we have
+
+$$
+\sin^2(x) + \cos^2(x) = 1
+$$
+:::
+
+:::proposition Outstanding values
+Some outstanding values to keep in mind
+
+$$
+\cos(0) = 1, \quad \cos \left (\frac{\pi}{6} \right ) = \frac{\sqrt 3}{2}, \quad \cos \left (\frac{\pi}{4} \right ) = \frac{\sqrt 2}{2}, \quad \cos \left (\frac{\pi}{3} \right ) = \frac{1}{2}, \quad \cos \left ( \frac{\pi}{2} \right ) = 0.
+$$
+:::
