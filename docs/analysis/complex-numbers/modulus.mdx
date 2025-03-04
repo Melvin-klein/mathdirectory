@@ -1,0 +1,59 @@
+# Modulus
+
+Let $z \in \mathbb C$. We note $\Re(z)$ the real part of $z$ and $\Im(z)$ the imaginary part of $z$.
+
+## Definition
+
+:::definition
+for all $z \in \mathbb C$, the modulus of $z$ is the positive real number denoted $|z|$ defined by
+
+$$
+|z| = \sqrt{z\overline z} = \sqrt{\Re(z)^2 + \Im(z)^2}.
+$$
+:::
+
+## Results
+
+:::proposition
+For all complex number $z$, we have:
+
+- $|z| = |\bar z|$,
+- $z = 0 \text{ if, and only if, } |z| = 0$,
+- $\Re z$ \leqslant |\Re z| \leqslant |z| and $\Im z \leqslant |\Im z| \leqslant |z|$.
+:::
+
+:::proof
+Use the definition of modulus.
+:::
+
+:::proposition
+For any nonzero complex number $z$, we have $\frac{1}{z} = \frac{\bar z}{|z|^2}$, and,
+
+$$
+    |z| = 1 \text{ if, and only if }, \frac{1}{z} = \bar z
+$$
+:::
+
+:::proposition
+For any $z_1 \in \mathbb C$ and any $z_2 \in \mathbb C$, we have
+
+$$
+    |z_1z_2| = |z_1||z_2| \quad \text{ and, if } z_2 \neq 0, \quad \left |\frac{z_1}{z_2}\right | = \frac{|z_1|}{|z_2|}.
+$$
+:::
+
+:::proposition Triangle inequalities
+For any $z_1 \in \mathbb C$ and $z_2 \in \mathbb C$, we have
+
+$$
+    |z_1 + z_2| \leqslant |z_1| + |z_2|,
+$$
+
+and
+
+$$
+    \left ||z_1| - |z_2| \right | \leqslant |z_1 - z_2|,
+$$
+
+with equality if, and only if, $\exists k \in \mathbb R_+ \quad z_2 = kz_1 \text{ or } z_1 = kz_2$.
+:::
